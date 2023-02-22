@@ -131,3 +131,35 @@ a {
     font-size: 1.2rem;
   }
 }
+
+/* Lists */
+
+.list {
+  /* to get rid of the bullet points in the list items */
+  list-style: none;
+  /* to get rid of the default padding the browser add */
+  padding-left: 0;
+  color: var(--color-headings);
+}
+
+.list__inline .list__item {
+  /* to set the horizontal list */
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.list__tick {
+  list-style-image: url(../images/tick.svg);
+  padding-left: 3rem;
+}
+
+.list__tick .list__item {
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list__tick .list__item {
+    padding-left: 0;
+  }
+}
