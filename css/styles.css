@@ -826,5 +826,7 @@ a {
 @media screen and (min-width: 768px) {
   .feature:nth-of-type(even) .feature__content {
     order: 2;
+    /*for nth-of-type to work, there must be one parent element for all the child elemts.
+     ie: there should be only one feature class and as many feature__content classes as you like*/
   }
 }
